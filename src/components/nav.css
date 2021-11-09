@@ -1,0 +1,37 @@
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2d728;
+}
+nav .menu-bar {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+nav .menu-bar li {
+  width: 25%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "Josefin Slab", "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+nav .menu-bar li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #333333;
+}
+nav .menu-bar li:hover {
+  background: #f6e369;
+}
+
+/*# sourceMappingURL=nav.css.map */
