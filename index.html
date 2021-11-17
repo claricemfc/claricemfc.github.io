@@ -1,116 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- CONFIG -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- RESET -->
-    <link rel="stylesheet" href="./src/reset.css">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="./src/style.css">
-    
-    <!-- COMPONENTS CSS -->
-    <link rel="stylesheet" href="./src/components/nav.css">
-    <link rel="stylesheet" href="./src/components/header.css">
-    <link rel="stylesheet" href="./src/components/main.css">
-    <link rel="stylesheet" href="./src/components/footer.css">
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="./src/css/reset.css">
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- font-family: 'Josefin Slab', serif; -->
+        <!-- font-family: 'Josefin Slab', serif; -->
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
+        <!-- ICONS Outlined -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    
+    <!-- TITLE -->
     <title>ClariceMFC</title>
 </head>
 <body>
-    <nav>
-        <ul class="menu-bar">
-            <li><a href="#">início</a></li>
-            <li><a href="#">sobre</a></li>
-            <li><a href="#">portfólio</a></li>
-            <li><a href="#">contato</a></li>
-        </ul>
-    </nav>
 
-    <header>
-        <!-- <img src="" alt=""> -->
-        <p class="subtitle">Olá, eu sou</p>
-        <h1 class="title">clarice costa</h1>
-        <ul>
-            <li><a href="#">designer de ui e ux</a></li>
-            <li><a href="#">designer gráfica</a></li>
-            <li><a href="#">ilustradora e editora de imagens</a></li>
-        </ul>
-    </header>
+    <section id="all">
 
-    <main>
-        <section class="text"></section>
-        <section class="table">
-            <div class="post-its">
-                <span class="post-it">
-                    <h2>designer de ui e ux</h2>
-                    <p>Trabalho com criação de protótipos interativos de baixa e alta fidelidade. Facilitando o acesso dos programadores às especificações de design.</p>
-                    <a href="">confira meus trabalhos >></a>
-                </span>
-                <span class="empty"></span>
-            </div>
-            <div class="post-its reverse">
-                <span class="post-it">
-                    <h2>designer gráfica</h2>
-                    <p>Trabalho com criação de logos e identidades visuais, mídias virtuais e impressas para todo tipo de negócio.</p>
-                    <a href="">confira meus trabalhos >></a>
-                </span>
-                <span class="empty"></span>
-            </div>
-            <div class="post-its">
-                <span class="post-it">
-                    <h2>ilustradora e editora de imagens</h2>
-                    <p>Crio artes para diversos fins, como ilustração, jogos, concept art</p>
-                    <a href="">confira meus trabalhos >></a>
-                </span>
-                <span class="empty"></span>
-            </div>
-        </section>
-        <section class="text"></section>
-    </main>
-
-    <footer>
-        <div class="like-it">
-            <h1>gostou?</h1>
-            <p>Me envie um email ou uma mensagem por WhatsApp!</p>
+        <button id="menuMobile" style="z-index: 10;">
+            <span id="icon" class="material-icons-outlined">
+                menu
+            </span>
+        </button>
+        <nav>
             <ul>
-                <li>claricemfc@gmail.com</li>
-                <li>(92) 98124-4180</li>
+                <li><a href="#">início</a></li>
+                <li><a href="#">sobre</a></li>
+                <li><a href="#">portfólio</a></li>
+                <li><a href="#">contato</a></li>
             </ul>
-        </div>
-        <div class="contact">
-            <h1>contato</h1>
-            <ul class="social-media">
-                <li class="medias">
-                    <a href="#">
-                        <div></div>
-                    </a>
-                </li>
-                <li class="medias">
-                    <a href="#">
-                        <div></div>
-                    </a>
-                </li>
-                <li class="medias">
-                    <a href="#">
-                        <div></div>
-                    </a>
-                </li>
-                <li class="medias">
-                    <a href="#">
-                        <div></div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+        </nav>
+
+        <main id="home">
+            <header>
+                
+            </header>
+        </main>
+
+        <main id="about"></main>
+
+        <main id="portfolio"></main>
+
+        <main id="contact"></main>
+
+        <footer>
+
+        </footer>
+
+    </section>
+    
+    <script src="./src/js/app.js"></script>
 </body>
 </html>
