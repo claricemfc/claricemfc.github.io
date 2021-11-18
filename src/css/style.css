@@ -23,6 +23,7 @@
 }
 #all nav ul li {
   width: 25%;
+  transition: background ease-in-out 0.3s;
 }
 #all nav ul li a {
   width: 100%;
@@ -47,7 +48,7 @@
 }
 @media screen and (max-width: 600px) {
   #all #menuMobile {
-    position: absolute;
+    position: fixed;
     left: 5px;
     top: 5px;
     width: 40px;
@@ -59,6 +60,7 @@
     border: none;
   }
   #all nav {
+    position: absolute;
     height: 8rem;
     transform: translateY(-100%);
     transition: all ease-in-out 0.5s;
@@ -71,6 +73,94 @@
   #all nav ul li {
     width: 100%;
     height: 25%;
+  }
+}
+
+#all #home {
+  width: 80%;
+}
+#all #home header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #333;
+  font-family: "Josefin Slab", "Courier New", Courier, monospace;
+}
+#all #home header .logo {
+  width: 100px;
+  height: 100px;
+  background: #F2D728;
+  border-radius: 50%;
+  margin: 75px;
+}
+@media screen and (max-width: 600px) {
+  #all #home header .logo {
+    margin: 50px;
+  }
+}
+#all #home header .subtitle {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 600px) {
+  #all #home header .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+}
+#all #home header .title {
+  color: #F2D728;
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 600px) {
+  #all #home header .title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+}
+#all #home header ul {
+  display: flex;
+}
+#all #home header ul li {
+  margin: 40px;
+}
+#all #home header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: color ease-in-out 0.3s;
+}
+#all #home header ul li a:hover {
+  color: #ccc;
+}
+@media screen and (max-width: 600px) {
+  #all #home header ul {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  #all #home header ul li {
+    text-align: center;
+    margin: 10px;
+  }
+  #all #home header ul li a {
+    font-size: 1rem;
+  }
+}
+#all #home header .arrow {
+  width: 50px;
+  height: 50px;
+  background: #F2D728;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1024px) {
+  #all #home {
+    width: 100%;
   }
 }
 

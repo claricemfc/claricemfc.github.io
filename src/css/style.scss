@@ -2,6 +2,7 @@ $yelow01: #F2D728;
 $font01: 'Josefin Slab', 'Courier New', Courier, monospace;
 $color01: #333333;
 
+// COMPONENTS
 #all {
     width: 100%;
     display: flex;
@@ -32,6 +33,8 @@ $color01: #333333;
             li {
                 width: 25%;
 
+                transition: background ease-in-out .3s;
+
                 a {
                     width: 100%;
                     height: 100%;
@@ -57,7 +60,7 @@ $color01: #333333;
     }
     @media screen and (max-width: 600px) {
         #menuMobile {
-            position: absolute;
+            position: fixed;
 
             left: 5px;
             top: 5px;
@@ -74,6 +77,8 @@ $color01: #333333;
         }
         
         nav {
+            position: absolute;
+
             height: calc(4*2rem);
             transform: translateY(-100%);
 
@@ -89,6 +94,120 @@ $color01: #333333;
                     height: 25%;
                 }
             }
+        }
+    }
+}
+
+#all {
+    // HOME
+        // header
+    #home {
+        width: 80%;
+        header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+
+            background: #333;
+
+            font-family: $font01;
+
+            .logo {
+                width: 100px;
+                height: 100px;
+
+                background: $yelow01;
+
+                border-radius: 50%;
+
+                margin: 75px;
+            }
+            @media screen and (max-width: 600px) {
+                .logo {
+                    margin: 50px;
+                }
+            }
+            
+            .subtitle {
+                color: #fff;
+                font-size: 2rem;
+
+                margin-bottom: 50px;
+            }
+            @media screen and (max-width: 600px) {
+                .subtitle {
+                    font-size: 1.2rem;
+
+                    margin-bottom: 20px;
+                }
+            }
+
+            .title {
+                color: $yelow01;
+                font-size: 3.2rem;
+                font-weight: 600;
+                text-transform: uppercase;
+
+                margin-bottom: 50px;
+            }
+            @media screen and (max-width: 600px) {
+                .title {
+                    font-size: 2rem;
+
+                    margin-bottom: 50px;
+                }
+            }
+
+            ul {
+                display: flex;
+
+                li {
+                    margin: 40px;
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        
+                        transition: color ease-in-out .3s;
+                    } a:hover {
+                        color: #ccc
+                    }
+                }
+            }
+            @media screen and (max-width: 600px) {
+                ul {
+                    flex-direction: column;
+
+                    margin-bottom: 50px;
+                    
+                    li {
+                        text-align: center;
+                        margin: 10px;
+
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .arrow {
+                width: 50px;
+                height: 50px;
+
+                background: $yelow01;
+
+                margin-bottom: 50px;
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        #home {
+            width: 100%;
         }
     }
 }
